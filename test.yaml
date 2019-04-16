@@ -6,7 +6,11 @@
     yum:
       name: postgresql
       state: latest
+    yum:
+      name: wget
+      state: latest
   - name: ensure that postgresql is started
     service:
       name: postgresql
       state: started
+
